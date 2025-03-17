@@ -15,6 +15,7 @@ C:.
 |   index.png
 |   index.service.worker.js
 |   index.wasm
+|   Jebalica.exe
 |   tree.txt
 |   
 \---WS
