@@ -1,0 +1,34 @@
+/* snowfall.css */
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #000; /* Set a background color for better visibility */
+}
+
+#snowfall {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+.snowflake {
+    position: absolute;
+    color: #fff;
+    font-size: 20px;
+    user-select: none;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}

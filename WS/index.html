@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        <title>Andrew Poženel</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/snowfall.css" />
+        <noscript>
+            <link rel="stylesheet" href="assets/css/noscript.css" />
+        </noscript>
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="assets/js/snowfall.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tsparticles-preset-snow/2.12.0/tsparticles.preset.snow.min.js" integrity="sha512-jBnJwYFJxF/145+i+IA/oxwgWBNJY1cYuOGlXaEDJxUNHPSxxdhuvUfLlQq6pqBuZqS2qnuR9yjGX8VpVgV0qw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Snowstorm/20131208/snowstorm-min.js" integrity="sha512-rMkLONrw50boYG/6Ku0E8VstfWMRn5D0dX3QZS26Mg0rspYq4EHxYOULuPbv9Be2HBbrrmN8dpPgYUeJ4bINCA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/JQuery-Snowfall/1.7.4/snowfall.jquery.min.js" integrity="sha512-2lnPnqNBAOffMBUQuPtK4BdPQ44edvBmuJK6fzj/EuAtX/VSW6xkuMrngwyuNkF36IQ+jkllOqLNlZu9PMXh0Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
+        <style>
+            /* Define the keyframes for the glow effect */
+            @keyframes glow {
+            0% {
+            text-shadow: 0 0 10px #00f;
+            }
+            50% {
+            text-shadow: 0 0 20px #00f, 0 0 30px #00f;
+            }
+            100% {
+            text-shadow: 0 0 10px #00f;
+            }
+            }
+            /* Apply the glow effect to the H1 element */
+            h1 {
+            font-size: 2em;
+            text-align: center;
+            color: #fff;
+            background-color: transparent;
+            /* Set the background to transparent */
+            padding: 20px;
+            margin: 0;
+            animation: glow 2s infinite;
+            /* Use the glow animation infinitely */
+            }
+        </style>
+        
+        
+        <script>
+  // Written by Andrew Poženel - 2023
+
+  let snowfall = new Snowfall({
+      // number of snowflakes
+      count: 100,
+      // min/max size
+      minRadius: 10,
+      maxRadius: 30,
+      // min/max speed
+      minSpeed: 3,
+      maxSpeed: 10,
+      // custom symbol or text for snowflakes
+      text: "\u2744", 
+      // color of snowflakes
+      color: "#ffffff",
+      // z-index for the canvas
+      zIndex: "1000" 
+  });
+</script>
+
+        
+        
+        
+    </head>
+    <body class="is-preload">
+        <div id="wrapper">
+            <div id="bg"></div>
+            <div id="overlay"></div>
+            <div id="main">
+                <!-- Header -->
+                <header id="header">
+                    <h1>Andrew Poženel</h1>
+                    <p>Software programmer &nbsp;&bull;&nbsp; Computer Technician &nbsp;&bull;&nbsp; Never asked for this </p>
+                    <nav>
+                        <ul>
+                            <i class="fa-regular fa-user fa-bounce" style="color: #ff0000;"></i>
+                            <button type="button" onclick="window.alert('Former PFC (Private First Class), security guard, ....\nPiano and 12-string guitar player!\nComputer Technician, playing games and also programming games and different software at times.\n\n.: Life is slowly drifting away.... Into the new beginning :.')"> More Info! </button>
+                            <button type="button" onclick="openModal()" style="padding: 10px 20px;">Show Author Image... </button>
+                            <li>
+                                <a href="https://twitter.com/executable0053" target="_blank" class="icon brands fa-twitter">
+                                <span class="label">Twitter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/AndrewPozenel/" target="_blank" class="icon brands fa-facebook-f">
+                                <span class="label">Facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/anderlli0053" target="_blank" class="icon brands fa-github">
+                                <span class="label">Github</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:andrew.pozenel@protonmail.com" class="icon solid fa-envelope">
+                                <span class="label">Email #1</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:andrew.pozenel@tutanota.com" class="icon solid fa-envelope">
+                                <span class="label">Email #2</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+                <!-- Footer -->
+                <footer id="footer">
+                    <span class="copyright">&copy; Andrew Poženel 2011 - 2023. </span>
+                </footer>
+            </div>
+            <!-- Add a container for the snowfall effect -->
+            <div id="snowfall"></div>
+        </div>
+        <script>
+            window.onload = function() {
+                document.body.classList.remove('is-preload');
+            }
+            window.ontouchmove = function() {
+                return false;
+            }
+            window.onorientationchange = function() {
+                document.body.scrollTop = 0;
+            }
+        </script>
+        <audio id="backgroundAudio" autoplay loop>
+            <source src="bgm2.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <div id="modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8);">
+            <div style="display: flex; justify-content: center; align-items: center; height: 100%;">
+                <span onclick="closeModal()" style="position: absolute; top: 20px; right: 30px; font-size: 30px; color: #fff; cursor: pointer;">&times;</span>
+                <img src="IMG_20230716_091350.jpg" alt="Image" style="max-width: 80%; max-height: 80%;" />
+            </div>
+        </div>
+        <script>
+            function openModal() {
+                const modal = document.getElementById("modal");
+                modal.style.display = "block";
+            }
+            
+            function closeModal() {
+                const modal = document.getElementById("modal");
+                modal.style.display = "none";
+            }
+            window.addEventListener("click", function(event) {
+                const modal = document.getElementById("modal");
+                if (event.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
+        </script>
+        <!-- Cookie Message -->
+        <div id="cookie-message" style="background-color: #333; color: #fff; padding: 10px; text-align: center; position: fixed; bottom: 0; width: 100%;"> By using this site, you agree to the use of cookies. </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const cookieMessage = document.getElementById("cookie-message");
+                // Check if the user has previously accepted cookies
+                if (!localStorage.getItem("cookiesAccepted")) {
+                    cookieMessage.style.display = "block";
+                }
+                // Hide the cookie message and set a cookie on click
+                document.addEventListener("click", function() {
+                    localStorage.setItem("cookiesAccepted", "true");
+                    cookieMessage.style.display = "none";
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+// Variables
+$body-bg-color: #333;
+$snowflake-color: #fff;
+$snowflake-size: 20px;
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: $body-bg-color;
+}
+
+#snowfall {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+
+.snowflake {
+    position: absolute;
+    color: $snowflake-color;
+    font-size: $snowflake-size;
+    pointer-events: none;
+    user-select: none;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
