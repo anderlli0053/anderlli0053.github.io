@@ -17,6 +17,7 @@ C:.
 |   index.wasm
 |   Jebalica.exe
 |   tree.txt
+|   WeaponTesting.exe
 |   
 \---WS
     |   bgm.mp3
