@@ -1,3 +1,5 @@
+Folder PATH listing
+Volume serial number is 5E27-82D9
 C:.
 |   coi-serviceworker.min.js
 |   index.144x144.png
@@ -19,6 +21,44 @@ C:.
 |   tree.txt
 |   WeaponTesting.exe
 |   
++---CD
+|   +---album
+|   |       index.html
+|   |       
+|   +---assets
+|   |   +---brand
+|   |   |       bootstrap-logo-white.svg
+|   |   |       bootstrap-logo.svg
+|   |   |       
+|   |   \---dist
+|   |       +---css
+|   |       |       bootstrap.min.css
+|   |       |       bootstrap.min.css.map
+|   |       |       bootstrap.rtl.min.css
+|   |       |       bootstrap.rtl.min.css.map
+|   |       |       
+|   |       \---js
+|   |               bootstrap.bundle.min.js
+|   |               bootstrap.bundle.min.js.map
+|   |               
+|   +---carousel
+|   |       carousel.css
+|   |       carousel.rtl.css
+|   |       index.html
+|   |       
+|   +---cover
+|   |       cover.css
+|   |       index.html
+|   |       
+|   +---images
+|   |       bg.jpg
+|   |       favicon.ico
+|   |       logo.jpg
+|   |       logo.png
+|   |       
+|   \---js
+|           main.js
+|           
 \---WS
     |   bgm.mp3
     |   bgm2.mp3
