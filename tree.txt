@@ -88,32 +88,38 @@ C:.
 |   |           fa-solid-900.woff
 |   |           fa-solid-900.woff2
 |   |           
-|   \---images
-|       |   bg.jpg
-|       |   favicon.ico
-|       |   img1.jpg
-|       |   img2.jpg
-|       |   img3.jpg
-|       |   img4.jpg
-|       |   logo.jpg
-|       |   logo.png
-|       |   overlay.png
-|       |   pic01.jpg
-|       |   pic02.jpg
-|       |   pic03.jpg
-|       |   ploscice.gif
-|       |   ploscice2.gif
-|       |   ploscice3.gif
-|       |   
-|       \---work
-|               1.jpg
-|               2.jpg
-|               3.jpg
-|               4.jpg
-|               5.jpg
-|               6.jpg
-|               7.jpg
-|               
+|   +---images
+|   |   |   bg.jpg
+|   |   |   favicon.ico
+|   |   |   img1.jpg
+|   |   |   img2.jpg
+|   |   |   img3.jpg
+|   |   |   img4.jpg
+|   |   |   logo.jpg
+|   |   |   logo.png
+|   |   |   overlay.png
+|   |   |   pic01.jpg
+|   |   |   pic02.jpg
+|   |   |   pic03.jpg
+|   |   |   ploscice.gif
+|   |   |   ploscice2.gif
+|   |   |   ploscice3.gif
+|   |   |   
+|   |   \---work
+|   |           1.jpg
+|   |           2.jpg
+|   |           3.jpg
+|   |           4.jpg
+|   |           5.jpg
+|   |           6.jpg
+|   |           7.jpg
+|   |           
+|   \---TEST
+|           1.jpg
+|           2.jpg
+|           3.jpg
+|           4.jpg
+|           
 +---IE
 |       IE.html
 |       
