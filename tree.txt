@@ -22,43 +22,101 @@ C:.
 |   WeaponTesting.exe
 |   
 +---CD
-|   +---album
-|   |       index.html
-|   |       
+|   |   index.html
+|   |   
 |   +---assets
-|   |   +---brand
-|   |   |       bootstrap-logo-white.svg
-|   |   |       bootstrap-logo.svg
+|   |   +---css
+|   |   |       fontawesome-all.min.css
+|   |   |       main.css
+|   |   |       noscript.css
 |   |   |       
-|   |   \---dist
-|   |       +---css
-|   |       |       bootstrap.min.css
-|   |       |       bootstrap.min.css.map
-|   |       |       bootstrap.rtl.min.css
-|   |       |       bootstrap.rtl.min.css.map
-|   |       |       
-|   |       \---js
-|   |               bootstrap.bundle.min.js
-|   |               bootstrap.bundle.min.js.map
-|   |               
-|   +---carousel
-|   |       carousel.css
-|   |       carousel.rtl.css
-|   |       index.html
-|   |       
-|   +---cover
-|   |       cover.css
-|   |       index.html
-|   |       
-|   +---images
-|   |       bg.jpg
-|   |       favicon.ico
-|   |       logo.jpg
-|   |       logo.png
-|   |       
-|   \---js
-|           main.js
-|           
+|   |   +---js
+|   |   |       breakpoints.min.js
+|   |   |       browser.min.js
+|   |   |       jquery.min.js
+|   |   |       main.js
+|   |   |       util.js
+|   |   |       
+|   |   +---sass
+|   |   |   |   main.scss
+|   |   |   |   noscript.scss
+|   |   |   |   
+|   |   |   +---base
+|   |   |   |       _page.scss
+|   |   |   |       _reset.scss
+|   |   |   |       _typography.scss
+|   |   |   |       
+|   |   |   +---components
+|   |   |   |       _actions.scss
+|   |   |   |       _box.scss
+|   |   |   |       _button.scss
+|   |   |   |       _form.scss
+|   |   |   |       _icon.scss
+|   |   |   |       _icons.scss
+|   |   |   |       _image.scss
+|   |   |   |       _list.scss
+|   |   |   |       _table.scss
+|   |   |   |       
+|   |   |   +---layout
+|   |   |   |       _bg.scss
+|   |   |   |       _footer.scss
+|   |   |   |       _header.scss
+|   |   |   |       _main.scss
+|   |   |   |       _wrapper.scss
+|   |   |   |       
+|   |   |   \---libs
+|   |   |           _breakpoints.scss
+|   |   |           _functions.scss
+|   |   |           _mixins.scss
+|   |   |           _vars.scss
+|   |   |           _vendor.scss
+|   |   |           
+|   |   \---webfonts
+|   |           fa-brands-400.eot
+|   |           fa-brands-400.svg
+|   |           fa-brands-400.ttf
+|   |           fa-brands-400.woff
+|   |           fa-brands-400.woff2
+|   |           fa-regular-400.eot
+|   |           fa-regular-400.svg
+|   |           fa-regular-400.ttf
+|   |           fa-regular-400.woff
+|   |           fa-regular-400.woff2
+|   |           fa-solid-900.eot
+|   |           fa-solid-900.svg
+|   |           fa-solid-900.ttf
+|   |           fa-solid-900.woff
+|   |           fa-solid-900.woff2
+|   |           
+|   \---images
+|       |   bg.jpg
+|       |   favicon.ico
+|       |   img1.jpg
+|       |   img2.jpg
+|       |   img3.jpg
+|       |   img4.jpg
+|       |   logo.jpg
+|       |   logo.png
+|       |   overlay.png
+|       |   pic01.jpg
+|       |   pic02.jpg
+|       |   pic03.jpg
+|       |   ploscice.gif
+|       |   ploscice2.gif
+|       |   ploscice3.gif
+|       |   
+|       \---work
+|               1.jpg
+|               2.jpg
+|               3.jpg
+|               4.jpg
+|               5.jpg
+|               6.jpg
+|               7.jpg
+|               
++---IE
+|       IE.html
+|       
 +---WP
 |   |   index.php
 |   |   license.txt
