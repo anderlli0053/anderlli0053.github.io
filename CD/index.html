@@ -185,6 +185,19 @@ ol.bold-numbers li::before {
     width: 100%;
     height: 100%;
   }
+  
+  /* Piškotki */
+  
+ .cookie-warning {
+      background-color: #ff9900;
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
 
     
  
@@ -192,8 +205,15 @@ ol.bold-numbers li::before {
 </head>
 <body class="is-preload">
 
+
+
   <!-- Wrapper -->
   <div id="wrapper">
+  
+  
+  <div class="cookie-warning" id="cookie-warning">
+    <p>Ta spletna stran uporablja piškotke, za pravilno delovanje. Z nadaljno uporabo te strani se s tem strinjate!</p>
+  </div>
 
     <!-- leva slika -->
     <img src="images/logo.png" alt="Logotip" width="300" height="300" style="position: absolute; top: 3%; left: 3%;" />
@@ -367,7 +387,7 @@ ol.bold-numbers li::before {
   <div class="gmap_canvas">
     <iframe
   class="gmap_iframe"
-  src="https://maps.google.com/maps?width=800&amp;height=600&amp;hl=en&amp;q=prečna pot 10a, 1360 vrhnika slovenija&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+  src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=prečna pot 10a, 1360 vrhnika slovenija&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
   allowfullscreen
   loading="lazy"
   referrerpolicy="no-referrer-when-downgrade"
@@ -513,6 +533,29 @@ document.querySelectorAll('details').forEach((details) => {
   });
 });
 
+ <!-- Piškotki -->
+
+function getCookie(name) {
+      var value = "; " + document.cookie;
+      var parts = value.split("; " + name + "=");
+      if (parts.length == 2) return parts.pop().split(";").shift();
+    }
+    
+    function setCookie(name, value) {
+      document.cookie = name + "=" + value + "; expires=Fri, 31 Dec 9999 23:59:59 GMT";
+    }
+    
+    if (getCookie("cookie-accepted") != "true") {
+      document.getElementById("cookie-warning").style.display = "block";
+    } else {
+      document.getElementById("cookie-warning").style.display = "none";
+    }
+    
+    document.addEventListener("click", function() {
+      var cookieWarning = document.getElementById("cookie-warning");
+      cookieWarning.style.display = "none";
+      setCookie("cookie-accepted", "true");
+    });
     
     
 
